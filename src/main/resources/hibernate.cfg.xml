@@ -17,5 +17,7 @@
         <mapping class="org.example.Address"/>
         <mapping class="org.mapping.OneToOne.Question"/>
         <mapping class="org.mapping.OneToOne.Answer"/>
+        <mapping class="org.mapping.OneToMany.Book"/>
+        <mapping class="org.mapping.OneToMany.Author"/>
     </session-factory>
 </hibernate-configuration>
