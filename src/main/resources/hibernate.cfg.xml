@@ -19,5 +19,7 @@
         <mapping class="org.mapping.OneToOne.Answer"/>
         <mapping class="org.mapping.OneToMany.Book"/>
         <mapping class="org.mapping.OneToMany.Author"/>
+        <mapping class="org.mapping.ManyToMany.Project"/>
+        <mapping class="org.mapping.ManyToMany.Employee"/>
     </session-factory>
 </hibernate-configuration>
