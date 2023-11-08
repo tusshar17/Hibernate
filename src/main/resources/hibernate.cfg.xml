@@ -13,6 +13,11 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+<!--        <property name="hibernate.cache.use_second_level_cache">true</property>-->
+<!--        <property name="hibernate.cache.use_query_cache">true</property>-->
+<!--        <property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>-->
+
         <mapping class="org.example.Student"/>
         <mapping class="org.example.Address"/>
         <mapping class="org.mapping.OneToOne.Question"/>
@@ -21,5 +26,7 @@
         <mapping class="org.mapping.OneToMany.Author"/>
         <mapping class="org.mapping.ManyToMany.Project"/>
         <mapping class="org.mapping.ManyToMany.Employee"/>
+
+        <mapping resource="Person.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
